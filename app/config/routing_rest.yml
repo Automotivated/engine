@@ -1,0 +1,4 @@
+get_results:
+  path: /search
+  defaults: { _controller: app.controller.search:getSearchAction }
+  methods: [GET]

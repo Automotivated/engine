@@ -1,0 +1,6 @@
+services:
+  app.formatter.json_response:
+    class: AppBundle\Response\JsonFormatter
+    arguments:
+      - '@jms_serializer'
+      - '@logger'

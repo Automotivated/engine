@@ -1,0 +1,5 @@
+services:
+  app.controller.search:
+    class: AppBundle\Controller\SearchController
+    arguments:
+      - '@app.formatter.json_response'
