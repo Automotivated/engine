@@ -1,0 +1,6 @@
+# Elastica Configuration
+fos_elastica:
+    clients:
+        default: { host: %elastic_host%, port: %elastic_port% }
+    indexes:
+        automotivated_engine: ~

@@ -77,5 +77,8 @@ sudo chmod -R +a "itsame allow delete,write,append,file_inherit,directory_inheri
 - The API will follow the rules of [json:api](http://jsonapi.org/)
 - It should return data under 150ms
 
+## TODO:
+http://obtao.com/blog/2014/02/indexing-and-simple-search-with-elasticsearch-and-symfony/
+
 ## Vroom
 This API is build for [Automotivated.vroom( )](https://github.com/Automotivated/vroom) and is out of the box compatible with eachother. How sweet!
