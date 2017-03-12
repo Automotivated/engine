@@ -1,13 +1,13 @@
 <?php
 
-namespace AppBundle\Entity;
+namespace AppBundle\Entity\Inventory;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Class Make
  *
- * @ORM\Table(name="automotive_make")
+ * @ORM\Table(name="inventory_make")
  * @ORM\HasLifecycleCallbacks()
  */
 class Make
@@ -38,6 +38,38 @@ class Make
 	 * @ORM\Column(type="datetime")
 	 */
 	protected $modified;
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLabel()
+    {
+        return $this->label;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getModified()
+    {
+        return $this->modified;
+    }
 
 	/**
 	 * @ORM\PrePersist()

@@ -2,6 +2,9 @@
 Automotivated.engine( ) is an search api for automotive inventory. It's build with [Symfony](http://symfony.com/) and connects to [Elasticsearch](https://www.elastic.co/) with a MySQL database for datastorage.
 
 
+## Vroom
+This API is build for [Automotivated.vroom( )](https://github.com/Automotivated/vroom) and is out of the box compatible with eachother. How sweet!
+
 ## Before we begin
 Put on some nice [Electro Swing](https://www.youtube.com/watch?v=aUn2HvekSZY) and make sure you got the following applications installed:
 
@@ -75,10 +78,12 @@ sudo chmod -R +a "itsame allow delete,write,append,file_inherit,directory_inheri
 
 ## Core concepts
 - The API will follow the rules of [json:api](http://jsonapi.org/)
-- It should return data under 150ms
+- It should return data under 50ms?? (let's try)
 
 ## TODO:
-http://obtao.com/blog/2014/02/indexing-and-simple-search-with-elasticsearch-and-symfony/
+- [ ] Database [fixtures](http://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html) 
+- [ ] Database [Enums](http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/cookbook/mysql-enums.html)
+- [ ] [Migrations](http://symfony.com/doc/current/bundles/DoctrineMigrationsBundle/index.html)
 
-## Vroom
-This API is build for [Automotivated.vroom( )](https://github.com/Automotivated/vroom) and is out of the box compatible with eachother. How sweet!
+### Research
+http://obtao.com/blog/2014/02/indexing-and-simple-search-with-elasticsearch-and-symfony/

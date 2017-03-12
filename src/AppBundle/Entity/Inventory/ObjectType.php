@@ -3,14 +3,14 @@
  * stuff zoals personenauto, fiets, aanhanger
  */
 
-namespace AppBundle\Entity;
+namespace AppBundle\Entity\Inventory;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Class ObjectType
  *
- * @ORM\Table(name="automotive_object_type")
+ * @ORM\Table(name="inventory_object_type")
  * @ORM\HasLifecycleCallbacks()
  */
 class ObjectType
@@ -35,4 +35,29 @@ class ObjectType
 	 * @ORM\Column(type="string")
 	 */
 	protected $label;
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLabel()
+    {
+        return $this->label;
+    }
+
 }
