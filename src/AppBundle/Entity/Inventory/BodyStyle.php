@@ -8,7 +8,6 @@ use Doctrine\ORM\Mapping as ORM;
  * Class BodyStyle
  *
  * @ORM\Table(name="inventory_body_style")
- * @ORM\HasLifecycleCallbacks()
  */
 class BodyStyle
 {
@@ -32,6 +31,22 @@ class BodyStyle
 	 * @ORM\Column(type="string")
 	 */
 	protected $label;
+
+    /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @param string $label
+     */
+    public function setLabel($label)
+    {
+        $this->label = $label;
+    }
 
     /**
      * @return mixed
